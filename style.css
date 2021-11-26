@@ -83,6 +83,9 @@ position:relative;
   margin-top:20px;
   text-decoration: none;
 }
+.d1{
+  padding-left: 10px;
+}
 hr{
   width: 70%;
   color:rgba(0, 0, 0, 0.144);
@@ -102,13 +105,13 @@ hr{
   text-align: left;
 }
 
-/* .page_blur{
+.page_blur{
   filter:blur(6px);
   -webkit-filter: blur(6px);
-} */
+}
 
 .pop_up{
-  display: none;
+  /* display: none; */
   position: absolute;
   text-align: center;
   width:20%;
