@@ -1,0 +1,77 @@
+body{
+    text-align: center;
+}
+.para2 {
+    font-size: 50px;
+    font-weight:700;
+    color: #363636;
+    font-family: sans-serif;
+    background: white;
+    width:25%;
+    margin: -40px auto;
+}
+a{
+    text-decoration: none;
+}
+.icon {
+    margin-top: 100px;
+   
+    font-size: 30px;
+}
+p.para3{
+    display: inline;
+    text-decoration: none;
+    color: rgb(112 112 112);
+}
+.fa-arrow-circle-left{
+    color:red;
+    margin-right: 10px;
+}
+.card1{
+    /* margin-top:20px; */
+    border:2px solid red;
+    height:50%;
+    width:25%;
+    /* width:22%; */
+    border-radius: 20px;
+    box-shadow: 5px 5px 9px 0px #949494;
+    /* margin-top:50px; */
+    height:350px;
+    /* padding: 20px; */
+    margin:50px auto;
+    text-align: center;
+  }
+  
+  .d1{
+    margin: auto;
+    color:red;
+    font-size: 25px;
+    margin-bottom: -10px;
+    margin-top:20px;
+    text-decoration: none;
+  }
+  hr{
+    width: 70%;
+    color:rgba(0, 0, 0, 0.144);
+  }
+  .d2{
+    color:red;
+    margin-top:30px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: line-through;
+  }
+  
+  .d3{
+    font-size:18px;
+    margin-top:30px;
+    margin-left:20px;
+    text-align: left;
+  }
+  
+  .fa.fa-plus-circle.d4{
+    color: red;
+    font-size: 30px;
+    float: right;
+    margin-right: 20px;
+  }

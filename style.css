@@ -1,94 +1,222 @@
 body{
-  margin-left: 100px;
-  margin-right: 100px;
-  font-family: sans-serif;
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-}
-#para1{
-   color:black;
-    font-size:50px;
-    margin-bottom: 0px;
-}
-.det1{
-  border:2px solid red;
-  padding:20px;
-  text-align: center;
-  height: 350px;
-  width:22%;
-  border-radius: 20px;
-  box-shadow: 5px 5px 9px 0px #949494;
-  margin-top:50px;
-}
-.parent_det{
+.card_parent
+{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
  align-content: space-around;
  cursor:pointer;
 }
-#head4{
-  color: #ff0000b0;
-  font-size:24px;
-  font-weight: 100;
+.parent_div{
+  width:50%;
+  height:10%;
+  margin: 50px auto;
+position:relative;
+
 }
-#para2{
-  color:red;
-  text-decoration: line-through;
-  font-size: 20px;
-  font-weight:700;
-  letter-spacing: 0.4;
+.child_div1{
+  width:35%;
+  height:100%;
+  padding-top:30px;
 }
-#sp2{
-  color:rgb(68, 68, 68);
-  font-size: 24px;
+#task{
+  font-weight:900;
+  font-size:32px;
 }
-.parent_det_h {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  justify-content: flex-end;
-  width: 100%;
+#list
+{
+  font-size: 32px;
+  margin-left:10px;
+  opacity:0.5;
 }
-.add1{
-  display: inline;
+.child_div2
+{
+  width:30%;
+  height:100%;
+  padding-top: 40px;
+  position:absolute;
+  top:0px;
+  right:0px;
 }
+
 #add{
-  display: flex;
+  position:absolute;
+  width:80%;
+  height:100%;
+  font-size:25px;
+  opacity:0.8;
+  padding-left:10px;
+  display: inline-block;
+}
+
+#circle{
+  color:red;
   font-size: 25px;
-  margin-left: 10px;
-  margin-top:0px;
 }
-/* .det_h
-{
-  display: grid;
-    align-content: space-evenly;
-    justify-content: end;
+
+.card1{
+  /* margin-top:20px; */
+  border:2px solid red;
+  height:50%;
+  width:25%;
+  /* width:22%; */
+  border-radius: 20px;
+  box-shadow: 5px 5px 9px 0px #949494;
+  margin-top:50px;
+  height:350px;
+  /* padding: 20px; */
+  margin:20px auto;
+  text-align: center;
+}
+
+.d1 a{
+  margin: auto;
+  color:red;
+  font-size: 25px;
+  margin-bottom: -10px;
+  margin-top:20px;
+  text-decoration: none;
+}
+hr{
+  width: 70%;
+  color:rgba(0, 0, 0, 0.144);
+}
+.d2{
+  color:red;
+  margin-top:30px;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+.d3{
+  font-size:18px;
+  margin-top:30px;
+  margin-left:20px;
+  text-align: left;
+}
+
+/* .page_blur{
+  filter:blur(6px);
+  -webkit-filter: blur(6px);
 } */
-.main_d
-{
-  display: grid;
-    grid-template-columns: 50% 50%;
-    text-align: right;
-    margin-top: 50px;
-    
+
+.pop_up{
+  display: none;
+  position: absolute;
+  text-align: center;
+  width:20%;
+  padding-bottom: 20px;
+  border:2px solid red;
+  border-radius: 10px;
+  box-shadow: 5px 5px 9px 0px #949494;
+  top:30%;
+  right: 37%;
+  background-color: white;
 }
+
+#pop_p{
+  color:red;
+  font-size: 22px;
+}
+#txt_input{
+  border: 1px solid red;
+  line-height:30px;
+  width:80%;
+  border-radius: 5px;
+}
+
+#btn{
+  font-size: 16px;
+  background-color: #fc5a5a;
+  border-radius: 20px;
+  width:25%;
+  border:1px solid #fc5a5a;
+  padding: 10px;
+}
+
+@media(max-width:1000px) {
+  .pop_up {
+    width: 40% !important;
+    right:30% !important;
+  }
+}
+
 @media(max-width:600px) {
-  .det1{
-    width:100%;
+  .parent_div {
+    width: 80%;
   }
-  .main_d {
-    display: block;
-    margin-top: 60px;
+  .card1{
+    width:60%;
+    height: auto;
+    box-shadow: 5px 5px 9px 0px #646464;
+    border: 1px solid #ff00005e;
+    border-radius: 10px;
   }
-  .parent_det_h {
-    /* display: grid; */
-    grid-template-columns: 80% 50%;
-    /* justify-content: flex-end;
-    width: 100%; */
+  .child_div1 {
+    width: 70%;
 }
-  .add1 {
+  .child_div2 {
+    width: 10%;
+  }
+  #add{
     display: none;
 }
-#para1{
-  width:120%;
+.pop_up {
+  width: 70% !important;
+  right: 15% !important;
+}
+hr{
+  display: none;
+}
+.d2{
+  display: none;
+}
+.d3{
+  display: none;
+}
+#task {
+  font-weight: 900;
+  font-size: 40px;
+}
+#list {
+  font-size: 40px;
+  margin-left: 10px;
+  opacity: 0.5;
+}
+#circle {
+  color: red;
+  font-size: 40px;
+}
+.d1 a {
+  color: #727272;
+  font-size: 18px;
+  padding-left:10px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+#btn {
+   width: 35%;
+}
+}
+
+@media (max-width: 360px){
+  .child_div1 {
+    width: 75%;
+}
+#list {
+    font-size: 35px;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+#task {
+  font-weight: 900;
+  font-size: 37px;
 }
 }
